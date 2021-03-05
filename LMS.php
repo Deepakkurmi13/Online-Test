@@ -725,7 +725,7 @@ else if(!isset($_SESSION['username']))
 <div class="container" id="data">
 <div class="row">
 <div class="col-sm-6" class="name">
-<image src="images/images.png" alt="loading" height="370px" width="550px" class="img1"/>
+<image src="images/man.png" alt="loading" height="370px" width="550px" class="img1"/>
 </div>
 <div class="col-sm-6" class="name1">
 <p class="data1"><b>Learning Management System</b></p>
@@ -736,13 +736,12 @@ is best plateform of the quiz test and<br> you can improve your knowladge</pre><
 </div>
 </div>
 
-
 <div class="container-fluid" id="data3">
 <p class="service">Service</p>
 <div class="row mt-5 ml-2">
 <div class="col-auto ">
   <div class="card my-3 mb-5" style="width:280px">
-    <img class="card-img-top" src="images/study.jpg" alt="Card image" style="width:100%">
+    <img class="card-img-top" src="images/work.png" alt="Card image" style="width:100%">
 	<div class="card-body">
       <h4 class="card-title">online Test</h4>
       <p class="card-text">A test maker for teachers is a simple online quiz maker that teachers use to create online tests to assess </p>
@@ -753,7 +752,7 @@ is best plateform of the quiz test and<br> you can improve your knowladge</pre><
   
    <div class="col-auto">
    <div class="card mt-3" style="width:280px">
-    <img class="card-img-top" src="images/work.png" alt="Card image" style="width:100%">
+    <img class="card-img-top" src="images/images.png" alt="Card image" style="width:100%">
 	<div class="card-body">
       <h4 class="card-title">Time management</h4>
       <p class="card-text">time system is manage by the teacher and its depend by teacher then teacher will increase or decrease time.</p>
