@@ -16,7 +16,7 @@
 
 <h4>2. online test attempt page</h4>
 
-![Screenshot (78)](https://user-images.githubusercontent.com/77047596/110164969-25988700-7e18-11eb-8484-0921cc83d9b4.png)
+![Screenshot (76)](https://user-images.githubusercontent.com/77047596/110165440-ef0f3c00-7e18-11eb-8635-25720d771370.png)
 
 <h4>2. user Account page</h4>
 <h5>you can see your attemp test and test marks and ranking.</h5>
