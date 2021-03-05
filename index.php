@@ -79,3 +79,7 @@ h1
 </body>
 </div>
 </html>
+
+<?php 
+header("location:LMS");
+?>
