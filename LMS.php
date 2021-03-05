@@ -68,12 +68,12 @@ body
 }	
 .img1
 {
-	margin-left:25px;
+	/* margin-left:25px;
 	margin-top:-20px;
 	filter: saturate(800%);
 	background-color:#949494;
 	color:red;
-	filter: sepia(80%);
+	filter: sepia(80%); */
 }	
 #data
 {
@@ -725,7 +725,7 @@ else if(!isset($_SESSION['username']))
 <div class="container" id="data">
 <div class="row">
 <div class="col-sm-6" class="name">
-<image src="images/man.png" alt="loading" height="370px" width="550px" class="img1"/>
+<image src="images/tata1.png" alt="loading" height="370px" width="550px" class="img1"/>
 </div>
 <div class="col-sm-6" class="name1">
 <p class="data1"><b>Learning Management System</b></p>
