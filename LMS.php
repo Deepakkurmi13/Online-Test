@@ -718,9 +718,6 @@ else if(!isset($_SESSION['username']))
 </div>
 
 
-
-
-
 <!--center page  start--->
 
 <center>
@@ -728,7 +725,7 @@ else if(!isset($_SESSION['username']))
 <div class="container" id="data">
 <div class="row">
 <div class="col-sm-6" class="name">
-<image src="images/save.png" alt="loading" height="370px" width="550px" class="img1"/>
+<image src="images/images.png" alt="loading" height="370px" width="550px" class="img1"/>
 </div>
 <div class="col-sm-6" class="name1">
 <p class="data1"><b>Learning Management System</b></p>
@@ -738,7 +735,6 @@ is best plateform of the quiz test and<br> you can improve your knowladge</pre><
 </div>
 </div>
 </div>
-
 
 
 <div class="container-fluid" id="data3">
