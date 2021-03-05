@@ -123,16 +123,21 @@ $(document).ready(function(){
 $(document).ready(function(){ 
     var val = "<?php echo $vkey ?>";
 	var email = "<?php echo $email ?>";
-	$.ajax({
-	  url :'verifyemail.php',
-      type: 'POST',
-      data:{vkey     :val,
-			email    :email},
-      success : function(data){
-		  alert(data);
-		  window.location.href= "LMS";
+
+	if(val !== "" && email !== "")
+{
+    $.ajax({
+	    url :'verifyemail.php',
+        type: 'POST',
+        data:{vkey :val,
+			  email  :email},
+        success : function(data){
+		    alert(data);
+		    window.location.href= "LMS";
 		},		  
 	});
+}
+
 });      
 </script>
 
