@@ -725,7 +725,7 @@ else if(!isset($_SESSION['username']))
 <div class="container" id="data">
 <div class="row">
 <div class="col-sm-6" class="name">
-<img src="images/man.png" alt="loading" height="370px" width="550px" class="img1"/>
+<img src="images/work.jpg" alt="loading" height="370px" width="550px" class="img1"/>
 </div>
 <div class="col-sm-6" class="name1">
 <p class="data1"><b>Learning Management System</b></p>
@@ -741,7 +741,7 @@ is best plateform of the quiz test and<br> you can improve your knowladge</pre><
 <div class="row mt-5 ml-2">
 <div class="col-auto ">
   <div class="card my-3 mb-5" style="width:280px">
-    <img class="card-img-top" src="images/study.jpg" alt="Card image" style="width:100%">
+    <img class="card-img-top" src="images/Capture3.png" alt="Card image" style="width:100%">
 	<div class="card-body">
       <h4 class="card-title">online Test</h4>
       <p class="card-text">A test maker for teachers is a simple online quiz maker that teachers use to create online tests to assess </p>
