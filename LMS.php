@@ -866,14 +866,13 @@ is best plateform of the quiz test and<br> you can improve your knowladge</pre><
 
 
 <?php
+    $vkey="";
+	$email="";
 if(isset($_GET['vkey']) &&  isset($_GET['email']))
 {
-    $vkey="";
 	$username="";
-	$email="";
 	$vkey = $_GET['vkey'];
 	$email = $_GET['email'];
-	
 }	
 ?>
 <!---jquery start  ---->
@@ -992,7 +991,10 @@ $(document).ready(function(){
 $(document).ready(function(){ 
     var val = "<?php echo $vkey ?>";
 	var email = "<?php echo $email ?>";
-	$.ajax({
+
+if(val !== "" && email !== "")
+{
+    $.ajax({
 	    url :'verifyemail.php',
         type: 'POST',
         data:{vkey :val,
@@ -1002,7 +1004,9 @@ $(document).ready(function(){
 		    window.location.href= "LMS";
 		},		  
 	});
-});      
+}
+	   
+});
 </script>
 
 <script>
