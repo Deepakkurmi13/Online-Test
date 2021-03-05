@@ -70,10 +70,6 @@ body
 {
 	margin-left:25px;
 	margin-top:-20px;
-	filter: saturate(800%);
-	background-color:#949494;
-	color:red;
-	filter: sepia(80%);
 }	
 #data
 {
@@ -741,7 +737,7 @@ is best plateform of the quiz test and<br> you can improve your knowladge</pre><
 <div class="row mt-5 ml-2">
 <div class="col-auto ">
   <div class="card my-3 mb-5" style="width:280px">
-    <img class="card-img-top" src="images/Capture3.png" alt="Card image" style="width:100%">
+    <img class="card-img-top" src="images/online.jpg" alt="Card image" style="width:100%">
 	<div class="card-body">
       <h4 class="card-title">online Test</h4>
       <p class="card-text">A test maker for teachers is a simple online quiz maker that teachers use to create online tests to assess </p>
