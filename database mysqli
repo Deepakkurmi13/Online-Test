@@ -1,0 +1,218 @@
+-- phpMyAdmin SQL Dump
+-- version 5.0.2
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Jan 07, 2021 at 08:44 AM
+-- Server version: 10.4.11-MariaDB
+-- PHP Version: 7.4.5
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `onlinetest`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `form_data`
+--
+
+CREATE TABLE `form_data` (
+  `id` int(11) NOT NULL,
+  `temail` varchar(50) NOT NULL,
+  `starttime` datetime(6) NOT NULL,
+  `endtime` datetime(6) NOT NULL,
+  `formtitle` longtext NOT NULL,
+  `formdescription` longtext NOT NULL,
+  `questions` longtext NOT NULL,
+  `options` longtext NOT NULL,
+  `answer` varchar(250) NOT NULL,
+  `formtiming` timestamp(6) NOT NULL DEFAULT current_timestamp(6) ON UPDATE current_timestamp(6)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `form_data`
+--
+
+INSERT INTO `form_data` (`id`, `temail`, `starttime`, `endtime`, `formtitle`, `formdescription`, `questions`, `options`, `answer`, `formtiming`) VALUES
+(1, 'deepakkurmi2021@gmail.com', '2020-12-22 18:03:00.000000', '2020-12-22 20:01:00.000000', 'fkjkfbkbfkbbf', 'ffjkffkjfkfkfnk', '[\"fnfnkfnknkfnkf\"]', '[[\"fknfnnfknkfnkfn\"]]', '[\"1\"]', '2020-12-22 12:31:55.778857'),
+(2, 'deepakkurmi2021@gmail.com', '2020-12-22 22:42:00.000000', '2020-12-22 23:40:00.000000', 'kjbfjbfjjfbffbfjb kbbkb', 'kjbfjbfjjfbffbfjb kbbkb', '[\"kjbfjbfjjfbffbfjb kbbkb kjbfjbfjjfbffbfjb kbbkb\"]', '[[\"kjbfjbfjjfbffbfjb kbbkb kjbfjbfjjfbffbfjb kbbkb\",\"kjbfjbfjjfbffbfjb kbbkb kjbfjbfjjfbffbfjb kbbkb\",\"kjbfjbfjjfbffbfjb kbbkb kjbfjbfjjfbffbfjb kbbkb\"]]', '[\"2\"]', '2020-12-22 17:11:04.151315');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `student_table`
+--
+
+CREATE TABLE `student_table` (
+  `id` int(11) NOT NULL,
+  `image` varchar(500) NOT NULL,
+  `username` varchar(50) NOT NULL,
+  `name` varchar(30) NOT NULL,
+  `email` varchar(30) NOT NULL,
+  `password` varchar(50) NOT NULL,
+  `gender` varchar(10) NOT NULL,
+  `city` varchar(100) NOT NULL,
+  `branch` varchar(100) NOT NULL,
+  `collagename` varchar(100) NOT NULL,
+  `vkey` varchar(50) NOT NULL,
+  `verifed` tinyint(1) NOT NULL,
+  `createdata` timestamp(6) NOT NULL DEFAULT current_timestamp(6) ON UPDATE current_timestamp(6),
+  `tokan` varchar(50) NOT NULL,
+  `timeexpire` datetime NOT NULL,
+  `rating` int(11) NOT NULL,
+  `star` int(15) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `student_table`
+--
+
+INSERT INTO `student_table` (`id`, `image`, `username`, `name`, `email`, `password`, `gender`, `city`, `branch`, `collagename`, `vkey`, `verifed`, `createdata`, `tokan`, `timeexpire`, `rating`, `star`) VALUES
+(1, 'update-images/s-1.jpg', 'deepakkurmi_60', 'Deepak kurmi', 'deepakkurmi2021@gmail.com', 'fcc9a215009de59c85c88ae3bbcfd7e9', 'male', 'Ayodhya Bypass, Bhopal, Madhya Pradesh, India', 'CSE', '(SGI)', 'e5a3f44ea8a2ba0', 1, '2020-12-22 18:11:20.439003', '', '0000-00-00 00:00:00', 50, 1),
+(6, '', 'raja_44', 'Raja kurmi', 'Deepakkurmi874@gmail.com', 'fcc9a215009de59c85c88ae3bbcfd7e9', 'male', 'Bhopal, Madhya Pradesh, India', 'CSE', '( BCE)', '62883fe7630fe02', 1, '2020-12-22 17:13:41.545060', '', '0000-00-00 00:00:00', 1, 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user1`
+--
+
+CREATE TABLE `user1` (
+  `id` int(6) UNSIGNED NOT NULL,
+  `title` longtext NOT NULL,
+  `starttime` datetime(6) NOT NULL,
+  `answer` varchar(100) NOT NULL,
+  `no_attempt` int(10) NOT NULL,
+  `rightanswer` int(10) NOT NULL,
+  `wronganswer` int(10) NOT NULL,
+  `endtime` datetime(6) NOT NULL,
+  `contest_no` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `user1`
+--
+
+INSERT INTO `user1` (`id`, `title`, `starttime`, `answer`, `no_attempt`, `rightanswer`, `wronganswer`, `endtime`, `contest_no`) VALUES
+(26, 'kjbfjbfjjfbffbfjb kbbkb', '2020-12-22 22:42:00.000000', '[\"2\"]', 0, 1, 0, '2020-12-22 23:40:00.000000', '2'),
+(27, 'kjbfjbfjjfbffbfjb kbbkb', '2020-12-22 22:42:00.000000', '[\"2\"]', 0, 1, 0, '2020-12-22 23:40:00.000000', '2'),
+(28, 'kjbfjbfjjfbffbfjb kbbkb', '2020-12-22 22:42:00.000000', '[\"2\"]', 0, 1, 0, '2020-12-22 23:40:00.000000', '2'),
+(29, 'kjbfjbfjjfbffbfjb kbbkb', '2020-12-22 22:42:00.000000', '[\"2\"]', 0, 1, 0, '2020-12-22 23:40:00.000000', '2'),
+(30, 'kjbfjbfjjfbffbfjb kbbkb', '2020-12-22 22:42:00.000000', '[\"2\"]', 0, 1, 0, '2020-12-22 23:40:00.000000', '2'),
+(31, 'kjbfjbfjjfbffbfjb kbbkb', '2020-12-22 22:42:00.000000', '[\"2\"]', 0, 1, 0, '2020-12-22 23:40:00.000000', '2'),
+(32, 'kjbfjbfjjfbffbfjb kbbkb', '2020-12-22 22:42:00.000000', '[\"2\"]', 0, 1, 0, '2020-12-22 23:40:00.000000', '2'),
+(33, 'kjbfjbfjjfbffbfjb kbbkb', '2020-12-22 22:42:00.000000', '[\"2\"]', 0, 1, 0, '2020-12-22 23:40:00.000000', '2'),
+(34, 'kjbfjbfjjfbffbfjb kbbkb', '2020-12-22 22:42:00.000000', '[\"2\"]', 0, 1, 0, '2020-12-22 23:40:00.000000', '2'),
+(35, 'kjbfjbfjjfbffbfjb kbbkb', '2020-12-22 22:42:00.000000', '[\"2\"]', 0, 1, 0, '2020-12-22 23:40:00.000000', '2'),
+(36, 'kjbfjbfjjfbffbfjb kbbkb', '2020-12-22 22:42:00.000000', '[\"2\"]', 0, 1, 0, '2020-12-22 23:40:00.000000', '2'),
+(37, 'kjbfjbfjjfbffbfjb kbbkb', '2020-12-22 22:42:00.000000', '[\"2\"]', 0, 1, 0, '2020-12-22 23:40:00.000000', '2'),
+(38, 'kjbfjbfjjfbffbfjb kbbkb', '2020-12-22 22:42:00.000000', '[\"2\"]', 0, 1, 0, '2020-12-22 23:40:00.000000', '2'),
+(39, 'kjbfjbfjjfbffbfjb kbbkb', '2020-12-22 22:42:00.000000', '[\"2\"]', 0, 1, 0, '2020-12-22 23:40:00.000000', '2'),
+(40, 'kjbfjbfjjfbffbfjb kbbkb', '2020-12-22 22:42:00.000000', '[\"2\"]', 0, 1, 0, '2020-12-22 23:40:00.000000', '2'),
+(41, 'kjbfjbfjjfbffbfjb kbbkb', '2020-12-22 22:42:00.000000', '[\"2\"]', 0, 1, 0, '2020-12-22 23:40:00.000000', '2'),
+(42, 'kjbfjbfjjfbffbfjb kbbkb', '2020-12-22 22:42:00.000000', '[\"2\"]', 0, 1, 0, '2020-12-22 23:40:00.000000', '2'),
+(43, 'kjbfjbfjjfbffbfjb kbbkb', '2020-12-22 22:42:00.000000', '[\"2\"]', 0, 1, 0, '2020-12-22 23:40:00.000000', '2'),
+(44, 'kjbfjbfjjfbffbfjb kbbkb', '2020-12-22 22:42:00.000000', '[\"2\"]', 0, 1, 0, '2020-12-22 23:40:00.000000', '2'),
+(45, 'kjbfjbfjjfbffbfjb kbbkb', '2020-12-22 22:42:00.000000', '[\"2\"]', 0, 1, 0, '2020-12-22 23:40:00.000000', '2'),
+(46, 'kjbfjbfjjfbffbfjb kbbkb', '2020-12-22 22:42:00.000000', '[\"2\"]', 0, 1, 0, '2020-12-22 23:40:00.000000', '2'),
+(47, 'kjbfjbfjjfbffbfjb kbbkb', '2020-12-22 22:42:00.000000', '[\"2\"]', 0, 1, 0, '2020-12-22 23:40:00.000000', '2'),
+(48, 'kjbfjbfjjfbffbfjb kbbkb', '2020-12-22 22:42:00.000000', '[\"2\"]', 0, 1, 0, '2020-12-22 23:40:00.000000', '2'),
+(49, 'kjbfjbfjjfbffbfjb kbbkb', '2020-12-22 22:42:00.000000', '[\"2\"]', 0, 1, 0, '2020-12-22 23:40:00.000000', '2'),
+(51, 'kjbfjbfjjfbffbfjb kbbkb', '2020-12-22 22:42:00.000000', '[\"3\"]', 0, 0, 1, '2020-12-22 23:40:00.000000', '2');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user6`
+--
+
+CREATE TABLE `user6` (
+  `id` int(6) UNSIGNED NOT NULL,
+  `title` longtext NOT NULL,
+  `starttime` datetime(6) NOT NULL,
+  `answer` varchar(100) NOT NULL,
+  `no_attempt` int(10) NOT NULL,
+  `rightanswer` int(10) NOT NULL,
+  `wronganswer` int(10) NOT NULL,
+  `endtime` datetime(6) NOT NULL,
+  `contest_no` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `user6`
+--
+
+INSERT INTO `user6` (`id`, `title`, `starttime`, `answer`, `no_attempt`, `rightanswer`, `wronganswer`, `endtime`, `contest_no`) VALUES
+(1, 'kjbfjbfjjfbffbfjb kbbkb', '2020-12-22 22:42:00.000000', '[\"2\"]', 0, 1, 0, '2020-12-22 23:40:00.000000', '2');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `form_data`
+--
+ALTER TABLE `form_data`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `student_table`
+--
+ALTER TABLE `student_table`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `user1`
+--
+ALTER TABLE `user1`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `user6`
+--
+ALTER TABLE `user6`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `form_data`
+--
+ALTER TABLE `form_data`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `student_table`
+--
+ALTER TABLE `student_table`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
+-- AUTO_INCREMENT for table `user1`
+--
+ALTER TABLE `user1`
+  MODIFY `id` int(6) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
+
+--
+-- AUTO_INCREMENT for table `user6`
+--
+ALTER TABLE `user6`
+  MODIFY `id` int(6) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
