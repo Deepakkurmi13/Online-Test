@@ -30,7 +30,7 @@ include("database-connection.php");
    top:-83px;
    -webkit-box-shadow: -1px 1px 7px -1px rgba(179,179,179,1);
   -moz-box-shadow: -2px 2px 15px -3px rgba(179,179,179,1);
-   box-shadow: -3px 2px 2 overflow:auto;
+   box-shadow: -3px 2px 2 overflow auto;
    margin-bottom:-82px;
    overflow:auto;
 }
@@ -163,7 +163,6 @@ include("database-connection.php");
 .fieldset1
 {
 	height:500px;
-	background-color:;
 	width:90%;
 	margin-top:50px;
 	border:1px solid #eee;
@@ -238,9 +237,6 @@ include("database-connection.php");
 #rating:hover
 {
     text-decoration:none;	
-}
-#margin
-{
 }
 
 #star1,#star2,#star3,#star4,#star5,#star6,#star7

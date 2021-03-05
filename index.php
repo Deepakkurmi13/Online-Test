@@ -11,17 +11,14 @@ body
 #index
 {
 	height:100px;
-	font:size:15px;
+	font-size:15px;
 	width:200px;
 }
 #index a
 {
 	font-size:20px;
 }
-h1
-{
 
-}
 </style>
 </head>
 <body>

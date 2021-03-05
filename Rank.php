@@ -45,7 +45,7 @@ body
 .pagination .first
 {
   color:white;
-  float: left;
+  float:left;
   background-color:#5e5950;
   padding: 8px 16px;
   text-decoration: none;

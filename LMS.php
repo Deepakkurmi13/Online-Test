@@ -77,7 +77,6 @@ body
 }	
 #data
 {
-	background-color:;
 	height:500px;
 }
 #ccc
@@ -402,7 +401,7 @@ border: 0px dotted #ffffff;
   padding:4px;  
   border-bottom:1px solid #eee;
   text-indent:15px;
-  margin-bottom:20px;+
+  margin-bottom:20px;
   
 }
 .list-content a:hover
@@ -511,7 +510,7 @@ border: 0px dotted #ffffff;
 {
 	font-size:30px;
     text-decoration:underline;
-	font-width:bold;
+	font-weight:bold;
 	letter-spacing:2px;
 	color:gray;
 }
@@ -729,7 +728,7 @@ else if(!isset($_SESSION['username']))
 <div class="container" id="data">
 <div class="row">
 <div class="col-sm-6" class="name">
-<image src="images/save.png" height="370px" width="550px" class="img1"/>
+<image src="images/save.png" alt="loading" height="370px" width="550px" class="img1"/>
 </div>
 <div class="col-sm-6" class="name1">
 <p class="data1"><b>Learning Management System</b></p>
