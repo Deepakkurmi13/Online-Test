@@ -725,7 +725,7 @@ else if(!isset($_SESSION['username']))
 <div class="container" id="data">
 <div class="row">
 <div class="col-sm-6" class="name">
-<img src="images/e-learning-vector.png" alt="loading" height="370px" width="550px" class="img1"/>
+<img src="images/learning.png" alt="loading" height="370px" width="550px" class="img1"/>
 </div>
 <div class="col-sm-6" class="name1">
 <p class="data1"><b>Learning Management System</b></p>
