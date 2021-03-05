@@ -2,11 +2,11 @@
 
 <h3>Steps how to run project</h3>
 
-1 Downlaod zip file and extract all file 
-2 And save in htdocs folder 
-3 And import database -- database mysqli file find in all files on github.
-4 And run in localhost/filename/LMS.
-5 live in hiroku - https://online-quiz-text.herokuapp.com/LMS
+1 Downlaod zip file and extract all file </br>
+2 And save in htdocs folder </br>
+3 And import database -- database mysqli file find in all files on github.</br>
+4 And run in localhost/filename/LMS.</br>
+5 live in hiroku - https://online-quiz-text.herokuapp.com/LMS</br>
 
 <h12>Demo---</h12>
 
