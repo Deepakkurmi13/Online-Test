@@ -71,10 +71,7 @@ body
 	margin-left:25px;
 	margin-top:-20px;
 }	
-#data
-{
-	height:500px;
-}
+
 #ccc
 {
    height:auto;
@@ -510,9 +507,21 @@ border: 0px dotted #ffffff;
 	letter-spacing:2px;
 	color:gray;
 }
+#data{
+	height:500px;
+}
 #data3 img
 {
 	height:200px;
+}
+
+.name{
+   width:50%;
+   float: left;
+}
+.name1{
+ width:50%;
+ float:right;
 }
 </style>
 </head>
@@ -718,18 +727,22 @@ else if(!isset($_SESSION['username']))
 
 <center>
 <div  id="ccc">
-<div class="container" id="data">
-<div class="row">
-<div class="col-sm-6" class="name">
+
+
+<div  id="data">
+
+<div  class="name">
 <img src="images/learning.png" alt="loading" height="370px" width="550px" class="img1"/>
 </div>
-<div class="col-sm-6" class="name1">
+
+<div  class="name1">
 <p class="data1"><b>Learning Management System</b></p>
 <p class="data2"><pre style="color:gray;"><pre>welcome to learing management system this 
 is best plateform of the quiz test and<br> you can improve your knowladge</pre></p>
 <a href="about"><button  class="btn1" type="button" value="Read more">Read More</button></a>
 </div>
-</div>
+
+
 </div>
 
 <div class="container-fluid" id="data3">
