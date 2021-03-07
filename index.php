@@ -73,6 +73,7 @@ body
 <a href="notes">notes</a><br>
 <a href="upload_notes">uploadNotes</a><br>
 <a href="downloads">pdf downlaod</a><br>
+<a href="mail_send">mail_send</a><br>
 </body>
 </div>
 </html>
