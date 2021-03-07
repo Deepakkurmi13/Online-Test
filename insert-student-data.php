@@ -99,7 +99,7 @@ $rw3 = mysqli_fetch_assoc($sql3);
 		  $to      = "deepakkurmi2021@gmail.com"; 
 		 $subject = " Learning Management System";
 		 $message  =  "{$username} successfully resistered";
-		 $headers  = "From : deepakkurmi934@gmail   \r\n";
+		 $headers  = "From : deepakkurmi9340@gmail.com   \r\n";
 		 $headers .= "MIME-version: 1.0" . "\r\n";
 		 $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n"; 
 		 
