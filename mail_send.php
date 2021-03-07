@@ -5,5 +5,11 @@ $txt = "Hello world!";
 $headers = "From: webmaster@example.com" . "\r\n" .
 "CC: somebodyelse@example.com";
 
-mail($to,$subject,$txt,$headers);
+$mail1 = mail($to,$subject,$txt,$headers);
+if ($mail1) {
+    echo "ok";
+} else {
+    echo "error";
+}
+
 ?>
