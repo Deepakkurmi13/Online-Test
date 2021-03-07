@@ -10,7 +10,7 @@ $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 $mail = mail($to ,$subject ,$message ,$headers);     
  
 if($mail ){
- ehco "send";
+ echo "ok";
 }else{
    echo "error";
 }
