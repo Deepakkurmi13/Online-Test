@@ -211,7 +211,7 @@ else
     It will not take long.</pre>
      <hr style="width:50%;background-color:lightgray;"/>
   </div>
-<div style="background-color:;height:700px;width:100%;margin-top:70px;">
+<div style="height:700px;width:100%;margin-top:70px;">
   <div id="zzz">
    <table>
    <form id="form-data" enctype="maltipart/form-data" onsubmit="return false">
@@ -635,16 +635,7 @@ $(document).ready(function(){
 			  url : 'insert-student-data.php',
 			  type: "POST",
 			  data: $("#form-data").serialize(),
-			  beforesend: function(e){
-			      $("#msg-box").slideDown(1000);
-			      window.scrollTo(0, 0);
-				  $("#msg-box p").html("Loading responce...");
-			      setTimeout(function(){
-				  $("#msg-box").fadeOut();
-			     },4000);
-		         $("#msg-box p").html("* All field is required.");
-			    },
-			success: function(data){
+			  success: function(data){
 				
             if(data == 1 || data == 2 || data == 3 || data == 4  || data == 5)
 			{

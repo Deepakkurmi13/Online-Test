@@ -1,3 +1,6 @@
+<?php
+session_start();
+?> 
 <html>
 
 <head>
@@ -25,8 +28,8 @@
 </head>
 
 <body>
-    <?php	
-session_start();
+<?php	
+
 $username = $_POST['username'];
 $name     = $_POST['name'];
 $email    = $_POST['email'];
@@ -83,7 +86,7 @@ $rw3 = mysqli_fetch_assoc($sql3);
             <tr style='background-color:#eee;'><td><a href='http://localhost/onlinetestwebsitefiles/LMS?vkey=$vkey&email=$email'><button style='margin-left:180px;margin-top:10px;color:white;background-color:Dodgerblue;'>Verify Email</button></a></td></tr>
             </table>
             </center>	
- ";
+        ";
         // $message .= "
 		  //    ";
 		 $headers  = "From : Learning management system  \r\n";
@@ -118,10 +121,7 @@ $rw3 = mysqli_fetch_assoc($sql3);
                               <tr><td><img src='images/right.jpg' style='height:90px;width:140px;margin-top:20px;margin-left:380px;color:red;'></td></tr>				
 				              </table></center>"; 
 		
-		    echo $result;
-		
-
-		 
+		    echo $result;	 
 		}
 		
     }  
