@@ -1,7 +1,10 @@
 <?php
 
 $conn="";
-$conn = mysqli_connect("remotemysql.com","NMsujgUwNd","dkrgDFgdkB","NMsujgUwNd");
+
+$conn = mysqli_connect("localhost","root","","onlinetest");
+
+// $conn = mysqli_connect("remotemysql.com","NMsujgUwNd","dkrgDFgdkB","NMsujgUwNd");
   
 if($conn)
 {

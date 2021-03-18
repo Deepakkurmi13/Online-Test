@@ -106,7 +106,7 @@ body
 	position:relative;
 	height:auto;
 	width:90%;
-	top:20px;
+	top:-10px;
 	left:48px;
 	border:1px solid #d4d4d4;
 	background-color:#fafafa;
@@ -197,13 +197,7 @@ body
 {
 	height:auto;
 }
-#rank
-{
-	
-	font-size:30px;
-	margin-top:-15px;
-	margin-left:50px;
-}
+
 #line0
 {
 	margin-left:50px;
@@ -268,16 +262,7 @@ option
 	font-size:20px;
 	
 }
-#wait
-{
-	height:200px;
-   width:70%;
-   margin-left:210px;  
-   margin-top:0px;
-  -webkit-box-shadow: 0px 1px 8px 1px rgba(125,125,125,1);
-  -moz-box-shadow: 0px 1px 8px 1px rgba(125,125,125,1);
-   box-shadow: 0px 0px 6px 1px rgba(125,125,125,1);
-}
+
 </style>
 </head>
 <body>
@@ -286,28 +271,11 @@ include("nevbar.php");
 ?>
 
 
-<div id="wait">
-<table>
-<tr><td><p id='rank'>LMS Rank</p></td></tr>
-<tr><td><p id='line0'>..............................................................................................................................................................................................................................................................................................................................................................</p></td></tr>
-
-<tr><td><fieldset id='data1'>
-<i class='fa fa-search' aria-hidden='true' id='click'></i>
-<input type='text' name='search'  placeholder='Type to Search' id='search' onkeyup='search()'/>
-<select id='list' onchange='myFunction()'>
-  <option value='10' selected>10</option>
-  <option value='20'>20</option>
-   <option value='30'>30</option>
-</select>
-
-</fieldset></td></tr></table>
-
-</div>
-
-
-
 <div id="forgotbody">
+
 </div>
+
+
 <?php
 include("footer.php");
 ?>
@@ -369,10 +337,6 @@ else
 }
 
 }
-
-
-
-	
 </script>
 
 

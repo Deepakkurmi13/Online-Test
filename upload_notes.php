@@ -19,46 +19,75 @@ if($_SESSION['username'] == "deepakkurmi_60")
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 <link rel="stylesheet" href="css.css"/>
 <style>
+body
+{
+   background-color:white;
+   height:100%;
+   width:100%; 
+   
+}
+#forgotbody
+{
+   height:400px;
+   width:70%;
+   margin-left:210px;  
+   margin-top:-40px;
+  -webkit-box-shadow: 0px 1px 8px 1px rgba(125,125,125,1);
+  -moz-box-shadow: 0px 1px 8px 1px rgba(125,125,125,1);
+   box-shadow: 0px 2px 6px 1px rgba(125,125,125,1);
+}
 .form_data_notes{
-  display:flex;
-  justify-content:center;
-  margin-bottom:50px;
-
+  
 }
 .form_data_notes form {
   width: 100%;
   padding: 30px;
-  border: 1px solid #555;
+  
 }
 .form_data_notes input {
-  width: 100%;
+  width: 50%;
   border: 1px solid #f1e1e1;
   display: block;
   padding: 5px 10px;
+  margin-top:-20px;
+
 }
 .form_data_notes button {
   border: none;
   padding: 10px;
   border-radius: 5px;
+  width:30%;
+}
+.form_data_notes h3{
+    margin-top:-20px;
+    margin-left:30px;
+}
+.form_data_notes p{
+  font-size:15px;
+  font-family:monospace;
+  margin-top:65px;
+  margin-left:-130px;
 }
 </style>
 </head>
 <body>
 
-
 <?php
 include("nevbar.php");
 ?>
 
+<div id="forgotbody">
 <div class="container my-5 form_data_notes">
-      <div class="row">
+    <div class="row">
+      <h3>Upload File</h3>
+      <p>you can uplaod documents like notes,result of test etx. then user can download of his profile.</p>
         <form action="" method="post" enctype="multipart/form-data" >
-          <h3>Upload File</h3>
           <input type="file" name="myfile"> <br>
-          <button type="submit" name="save">upload</button>
+          <button type="submit" name="save" class="btn btn-dark">upload</button>
         </form>
-      </div>
     </div>
+  </div>
+</div>
 
 
 <?php
@@ -101,13 +130,12 @@ if (isset($_POST['save']))
         
         if (move_uploaded_file($file_temp, $destination)) 
         {
-            $sql = "INSERT INTO  files(files, size,username,download) VALUES('{$filename}', '{$size}','{$_SESSION['username']}',0)";
+            $sql = "INSERT INTO  files(files, size,username) VALUES('{$filename}', '{$size}','{$_SESSION['username']}')";
             if (mysqli_query($conn, $sql)) {
 
                     echo "<script>
                       alert('File uploaded successfully');
-                    </script>";
-              
+                    </script>";   
             }
         } else {
           echo "<script>

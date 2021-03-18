@@ -40,9 +40,10 @@ include("database-connection.php");
 
 $sql = "SELECT * FROM files";
 $result = mysqli_query($conn, $sql);
-
-$files = mysqli_fetch_all($result, MYSQLI_ASSOC);
-
+$count = mysqli_num_rows($result);
+echo $count;
+$files = mysqli_fetch_assoc($result);
+ 
 ?>
 
 
@@ -57,13 +58,15 @@ $files = mysqli_fetch_all($result, MYSQLI_ASSOC);
       </tr>
     </thead>
     <tbody>
-    <?php foreach ($files as $file): ?>
+    <?php
+     for($i=0; $i < $count; $i++){ 
+    ?>
       <tr>
-      <td><?php echo $file['files']; ?></td>
-      <td><?php echo floor($file['size'] / 1000)."KB"; ?></td>
-      <td><a href="downloads.php?file_id=<?php echo $file['id'] ?>">Download</a></td>
+      <td><?php echo $files['files']; ?></td>
+      <td><?php echo floor($files['size'] / 1000)."KB"; ?></td>
+      <td><a href="downloads.php?file_id=<?php echo $files['id'] ?>">Download</a></td>
       </tr>
-      <?php endforeach;?>
+      <?php }?>
     </tbody>
   </table>
 </div>

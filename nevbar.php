@@ -1,6 +1,5 @@
-
 <!--message-error show --->
-<div id="dialog" style="display:none" title="Message">
+<div id="dialog" style="display:none;" title="Message">
 <div id="message-error">
 <pre>
 <li id="error1" style="display:none">Username field is required.</li>
@@ -43,6 +42,7 @@ if($_SESSION['username'] == 'deepakkurmi_60')
 <a href='account'>Account</a>
 <a  href='edit-profile'>Edit Profile</a>
 <a  href='createform'>Create Form</a>
+<a  href='upload_notes'>upload_notes</a>
 </div>
 </div>
 </td>
@@ -62,7 +62,7 @@ echo "<table><tr>
 <div class='list-content'>
 <a href='account'>Account</a>
 <a  href='edit-profile'>Edit Profile</a>
-<a  href='#'>Invite Friends</a>
+<a  href='notes'>Notes</a>
 </div>
 </div>
 </td>
@@ -119,18 +119,15 @@ if(!isset($_SESSION['username']))
 </div>
 
 
+
+<!-----menu start-------->
 <div class="menu">
 <ul>
-
-
 <li>
 <div class="dropdown">
   <span class="pack"><a href="LMS" class="has"><i class="fas fa-caret-right" style="color:#5c4b4b;">Home</i></a></span>
 </div>
 </li>
-
-
-
 <?php
 if(isset($_SESSION['username']))
 {	
@@ -164,10 +161,6 @@ else if(!isset($_SESSION['username']))
         </script>";
 }
 ?>
-
-
-
-
 <li>
 <div class="dropdown">
   <span class="dropbtn"><i class="fas fa-caret-right">Student Servives</i></span>
@@ -199,8 +192,3 @@ else if(!isset($_SESSION['username']))
 </li>
 </ul>
 </div>
-
-
-
-
-
