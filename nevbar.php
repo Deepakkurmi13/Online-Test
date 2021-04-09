@@ -58,7 +58,7 @@ echo "<table><tr>
 <td><p><i class='fa fa-flag' aria-hidden='true' style='margin-left:5px;'></i></p></td>
 <td><p style='float:left;margin-left:10px;color:#330a0a;letter-spacing:1px;'>".$_SESSION['username']."</p></td>
 <td>
-<div class='list-down' style='min-height:160px;>
+<div class='list-down'>
 <i class='fa fa-caret-down' aria-hidden='true' id='listbtn'></i>
 <div class='list-content'>
 <a href='account'>Account</a>

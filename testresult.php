@@ -36,6 +36,12 @@ body
    box-shadow: 0px 2px 6px 1px rgba(125,125,125,1);
 }
 
+.inputbtn{
+    position:relative;
+    top: 10px;
+}
+
+
 table{
 height:auto;
 width:200px;
@@ -52,7 +58,7 @@ include("database-connection.php");
 
 $id= $_GET["id"];
 
-$queryTest = "SELECT * FROM  results a,  student_table b WHERE a.testid=$id AND b.username=a.username";
+$queryTest = "SELECT * FROM  results a,  student_table b WHERE a.testid=$id AND b.username=a.username ORDER BY  rightanswer DESC";
 
 $run = mysqli_query($conn ,$queryTest); 
 
@@ -60,6 +66,12 @@ $run = mysqli_query($conn ,$queryTest);
 
 <div class="container forgotbody">
        
+
+<form method="POST" action="export?id=<?php echo $id;?>">
+<div class="inputbtn">
+<input type="submit" name="export" value="Csv Export" class="btn btn-success"/>
+</div>
+</form>
   <table class="table  table-hover">
   <!-- <h2>Test Results</h2> -->
     <thead>
@@ -97,7 +109,6 @@ $i =1;
 include("footer.php");
 include("ajax.php");
 
-include("database-connection.php");
 
 ?>
 

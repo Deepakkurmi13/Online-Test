@@ -371,7 +371,7 @@ border: 0px dotted #ffffff;
 .list-content
 {
 	position:absolute;
-	min-width:155px;
+	min-width:160px;
 	background-color:white;
 	box-shadow:1px 1px 7px gray;
 	z-index:40;
@@ -588,7 +588,7 @@ echo "<table><tr>
 <td>
 <div class='list-down'>
 <i class='fa fa-caret-down' aria-hidden='true' id='listbtn'></i>
-<div class='list-content' style='height:160px;'>
+<div class='list-content'>
 <a href='account'>Account</a>
 <a  href='edit-profile'>Edit Profile</a>
 <a  href='notes'>Notes</a>
