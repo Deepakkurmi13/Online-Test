@@ -9,7 +9,7 @@ if(isset($_SESSION['username']) && isset($_GET['id']))
 	    $userid = $_SESSION["id"];
         $tname ="user".$userid;
 	    $id = $_GET['id'];	
-  $query20 = "SELECT * FROM $tname WHERE contest_no=$id";
+        $query20 = "SELECT * FROM $tname WHERE contest_no=$id";
         $sql55 = mysqli_query($conn ,$query20);
         $result2 = mysqli_num_rows($sql55);
 				

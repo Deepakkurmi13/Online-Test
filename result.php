@@ -357,8 +357,15 @@ if($result == 1)
 	$tname ="user".$userid;
     
     $query99 = "INSERT INTO ".$tname."(title,starttime,answer,no_attempt,rightanswer,wronganswer,endtime,contest_no) VALUES('{$formtitle}','{$starttime}','{$useranswer3 }','{$no_attempt}','{$right}','{$wrong}','{$endtime}','{$id8}')";   
-   
+
 	$run22 = mysqli_query($conn ,$query99);
+   
+
+	$username = $_SESSION['username'];
+
+	$resultData = "INSERT INTO results(title,starttime,answer,no_attempt,rightanswer,wronganswer,endtime,contest_no,username,testid) VALUES('{$formtitle}','{$starttime}','{$useranswer3 }','{$no_attempt}','{$right}','{$wrong}','{$endtime}','{$id8}','{$username}','{$id}')";
+
+	$run100 = mysqli_query($conn ,$resultData);
 	
 	
 	$query0 = "SELECT rightanswer FROM $tname";

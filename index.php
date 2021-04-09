@@ -74,6 +74,7 @@ body
 <a href="upload_notes">uploadNotes</a><br>
 <a href="downloads">pdf downlaod</a><br>
 <a href="mail_send">mail_send</a><br>
+<a href="user_results">user_results</a><br>
 </body>
 </div>
 </html>

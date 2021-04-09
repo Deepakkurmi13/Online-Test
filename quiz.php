@@ -149,6 +149,23 @@ if(isset($_SESSION['username']))
 
 
 
+.list-content
+{
+	position:absolute;
+	min-width:155px;
+	background-color:white;
+	box-shadow:1px 1px 7px gray;
+	z-index:40;
+	display:none;
+	height:250px;
+	margin-top:25px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+	border-radius:5px 5px 5px 5px;
+	border-radius:15px;
+	  
+}
+
+
 </style>
 </head>
 <body>

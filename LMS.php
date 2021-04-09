@@ -371,12 +371,11 @@ border: 0px dotted #ffffff;
 .list-content
 {
 	position:absolute;
-	min-width:165px;
+	min-width:155px;
 	background-color:white;
 	box-shadow:1px 1px 7px gray;
 	z-index:40;
 	display:none;
-	min-height:160px;
 	margin-top:25px;
 	box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 	border-radius:5px 5px 5px 5px;
@@ -567,11 +566,12 @@ if($_SESSION['username'] == 'deepakkurmi_60')
 <td>
 <div class='list-down'>
 <i class='fa fa-caret-down' aria-hidden='true' id='listbtn'></i>
-<div class='list-content'>
+<div class='list-content' style='height:250px;'>
 <a href='account'>Account</a>
 <a  href='edit-profile'>Edit Profile</a>
 <a  href='createform'>Create Form</a>
 <a  href='upload_notes'>upload_notes</a>
+<a  href='user_results'>Results</a>
 </div>
 </div>
 </td>
@@ -588,7 +588,7 @@ echo "<table><tr>
 <td>
 <div class='list-down'>
 <i class='fa fa-caret-down' aria-hidden='true' id='listbtn'></i>
-<div class='list-content'>
+<div class='list-content' style='height:160px;'>
 <a href='account'>Account</a>
 <a  href='edit-profile'>Edit Profile</a>
 <a  href='notes'>Notes</a>

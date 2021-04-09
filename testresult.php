@@ -2,7 +2,7 @@
 session_start();
 ?>
 <?php
-if($_SESSION['username'])
+if($_SESSION['username'] == "deepakkurmi_60" && isset($_GET["id"]))
 {	
 
 ?>
@@ -19,68 +19,88 @@ if($_SESSION['username'])
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 <link rel="stylesheet" href="css.css"/>
 <style>
-.form_data_pdf{
-    display:flex;
-    justify-content:center;
-    
+body
+{
+   background-color:white;
+   height:100%;
+   width:100%; 
+   
 }
-.data_table{
-    border:1px solid lightgray;
-    height:auto;
-    width:200%;
+.forgotbody
+{
+   height:auto;
+   width:65%;
+   margin-top:20px;
+  -webkit-box-shadow: 0px 1px 8px 1px rgba(125,125,125,1);
+  -moz-box-shadow: 0px 1px 8px 1px rgba(125,125,125,1);
+   box-shadow: 0px 2px 6px 1px rgba(125,125,125,1);
+}
+
+table{
+height:auto;
+width:200px;
 }
 </style>
 </head>
 <body>
+
 <?php
 include("nevbar.php");
-?>
-<?php
 include("database-connection.php");
 
-$sql = "SELECT * FROM files";
-$result = mysqli_query($conn, $sql);
-$count = mysqli_num_rows($result);
-echo $count;
-$files = mysqli_fetch_assoc($result);
- 
+
+
+$id= $_GET["id"];
+
+$queryTest = "SELECT * FROM  results a,  student_table b WHERE a.testid=$id AND b.username=a.username";
+
+$run = mysqli_query($conn ,$queryTest); 
+
 ?>
 
-
-<div class="container my-5 form_data_pdf">
-<div class="row">
-<table class="table table-hover data_table">
-    <thead class="thead-dark">
+<div class="container forgotbody">
+       
+  <table class="table  table-hover">
+  <!-- <h2>Test Results</h2> -->
+    <thead>
       <tr>
-      <th>Filename</th>
-    <th>size (in mb)</th>
-    <th>Downloads</th>
+        <th>#</th>
+        <th>Student</th>
+        <th>score</th>
       </tr>
     </thead>
     <tbody>
-    <?php
-     for($i=0; $i < $count; $i++){ 
-    ?>
-      <tr>
-      <td><?php echo $files['files']; ?></td>
-      <td><?php echo floor($files['size'] / 1000)."KB"; ?></td>
-      <td class="btn btn-dark"><a href="downloads.php?file_id=<?php echo $files['id'] ?>">Download</a></td>
-      </tr>
-      <?php }?>
+    
+<?php
+
+$i =1;
+
+    while($row = mysqli_fetch_assoc($run)){
+    
+?>
+<tr>
+<td><?php echo $i++;?></td>
+<td><?php echo $row["name"]?></td>
+<td><?php echo $row["rightanswer"] ?></td>
+</tr>
+
+<?php
+}
+ ?>
+      
     </tbody>
   </table>
 </div>
-</div>
-
-
-
-
 
 
 <?php
 include("footer.php");
 include("ajax.php");
+
+include("database-connection.php");
+
 ?>
+
 </body>
 </html>
 <?php
