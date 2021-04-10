@@ -832,7 +832,7 @@ is best plateform of the quiz test and<br> you can improve your knowladge</pre><
 				</h4>
 				<ul class="list-unstyled">
 					<li>
-						<a class="text-light">Email- deepakkurmi874@gmail.com<br>deepakkurmi2021@gmail</a>
+						<a class="text-light">Email- lms123@gmail.com<br>lms2021@gmail.com</a>
 					</li>
 					<li>
 						<a  class="text-light">900-727-2299</a>
@@ -858,7 +858,10 @@ is best plateform of the quiz test and<br> you can improve your knowladge</pre><
 		</div>
 		<p class="text-center text-secondary border-top border-secondary py-4">
 			copyright © 2020 <br>
-			Made by deepak kurmi
+			My team -  deepak kurmi <br>
+			Lokesh <br>
+			Gaurav<br>
+			Arjun <br>
 		</p>
 	</div>
 </footer>

@@ -19,28 +19,21 @@ if($_SESSION['username'] == "deepakkurmi_60")
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 <link rel="stylesheet" href="css.css"/>
 <style>
-body
-{
-   background-color:white;
-   height:100%;
-   width:100%; 
-   
-}
-.forgotbody
-{
-/* display:flex; */
-   height:auto;
-   width:65%;
-   margin-top:20px;
-  -webkit-box-shadow: 0px 1px 8px 1px rgba(125,125,125,1);
-  -moz-box-shadow: 0px 1px 8px 1px rgba(125,125,125,1);
-   box-shadow: 0px 2px 6px 1px rgba(125,125,125,1);
-}
 
 table{
-height:auto;
-width:200px;
+    width:200px;
+    height:auto;
+    align-items:center;
 }
+.resulttable{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    width:500px;
+   margin-left:450px;
+   margin-top:20px;
+}
+
 </style>
 </head>
 <body>
@@ -52,29 +45,29 @@ include("database-connection.php");
 $queryTest = "SELECT formtitle,id FROM form_data";
 
 $run = mysqli_query($conn ,$queryTest); 
-
-
 ?>
 
-<div class="container forgotbody">
-       
-  <table class="table  table-hover">
+<div class="text-center">
+<h4>RESULTS</h4>
+</div>
+
+<div class="resulttable">
+<table class="table table-sm table-bordered table-hover mb-5"> 
   <!-- <h2>Test Results</h2> -->
-    <thead>
+    <thead class="thead-dark">
       <tr>
         <th>#</th>
         <th>Test Tittle</th>
       </tr>
     </thead>
     <tbody>
-    
+
+
 <?php
-
 $i =1;
-
-    while($row = mysqli_fetch_assoc($run)){
-    
+while($row = mysqli_fetch_assoc($run)){    
 ?>
+
 <tr>
 <td><?php echo $i++;?></td>
 <td><a href="testresult?id=<?php echo $row['id'];?>"><?php echo $row["formtitle"]?></a></td>
@@ -83,18 +76,15 @@ $i =1;
 <?php
 }
  ?>
-      
-    </tbody>
-  </table>
+    
+</tbody>
+</table>
 </div>
-
 
 <?php
 include("footer.php");
 include("ajax.php");
-
 include("database-connection.php");
-
 ?>
 
 </body>

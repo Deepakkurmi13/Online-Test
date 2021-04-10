@@ -64,7 +64,7 @@ $files = mysqli_fetch_assoc($result);
       <tr>
       <td><?php echo $files['files']; ?></td>
       <td><?php echo floor($files['size'] / 1000)."KB"; ?></td>
-      <td class="btn btn-dark"><a href="downloads.php?file_id=<?php echo $files['id'] ?>">Download</a></td>
+      <td><a href="downloads.php?file_id=<?php echo $files['id'] ?>"><span class="btn btn-success">Download</span></a></td>
       </tr>
       <?php }?>
     </tbody>
