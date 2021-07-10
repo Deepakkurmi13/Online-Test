@@ -6,7 +6,7 @@
 2 And save in htdocs folder </br>
 3 And import database -- database mysqli file find in all files on github.</br>
 4 And run in localhost/filename/LMS.</br>
-5 live in hiroku - https://online-quiz-text.herokuapp.com/LMS</br>
+5 live in hiroku -https://online-context.herokuapp.com/LMS </br>
 
 <h12>Demo---</h12>
 
